@@ -12,6 +12,6 @@ public class DemoProj {
 	public static void main(String[] args) {
 		DemoProj ob1=new DemoProj();
 		System.out.println("I am "+ob1.Intro("Ram"));
-		System.out.println("I am "+ob1.greet("Linkedin"));
+		System.out.println(ob1.greet("Linkedin"));
 	}
 }
