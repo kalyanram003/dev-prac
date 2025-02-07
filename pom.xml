@@ -4,6 +4,14 @@
   <artifactId>devops-prac</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
+  <dependencies>
+  	<dependency>
+    <groupId>org.sonarsource.scanner.maven</groupId>
+    <artifactId>sonar-maven-plugin</artifactId>
+    <version>5.0.0.4389</version>
+	</dependency>
+
+  </dependencies>
   
   <build>
     <plugins>
@@ -25,6 +33,18 @@
     </plugins>
 </build>
 
+
+<profiles>
+		<profile>
+			<id>sonar</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<properties>
+				<sonar.host.url> http://localhost:9000 </sonar.host.url>
+			</properties>
+		</profile>
+	</profiles>
   
   
   
