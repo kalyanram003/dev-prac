@@ -1,4 +1,4 @@
-name: Java CI with Maven by Hitesh
+name: Java CI with Maven by kalyan
 on:
   push:
     branches: [ "master" ]
