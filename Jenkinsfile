@@ -5,9 +5,9 @@ pipeline {
     }
 
     environment {
-        IMAGE_NAME = 'kalyanramn/dev-prac'  // Change this to your Docker image name
-        IMAGE_TAG = 'latest'                // Change tag if needed
-        DOCKER_REGISTRY = 'docker.io'        // Change for AWS ECR, GCR, GHCR
+        IMAGE_NAME = 'kalyanramn/dev-prac'  
+        IMAGE_TAG = 'latest'               
+        DOCKER_REGISTRY = 'docker.io'        
     }
 
     stages {
